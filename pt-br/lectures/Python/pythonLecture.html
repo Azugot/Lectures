@@ -1,23 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../styles.css">
-    <link rel="stylesheet" href="./pythonLecture.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link rel="stylesheet" href="./pythonLecture.css" />
     <title>Seminário de Python</title>
-</head>
-<body>
-    <head>
-
-    </head>
+  </head>
+  <body>
+    <head> </head>
     <main>
-        <h1>Seminário de Python</h1>
-        <a href="../../../index.html">Mais seminários</a>
+      <h1>Seminário de Python</h1>
+      <div>
+        <h2>Introdução a Python</h2>
+        <p>
+          Python é uma linguagem de programação de propósito geral que é
+          frequentemente aplicada em programação web. É comumente definida como
+          uma linguagem de script orientada a objetos, uma definição que combina
+          suporte a OOP com uma orientação geral em relação a funções de script.
+          Sua estrutura é conhecida por combinar paradigmas procedural,
+          funcional e orientado a objetos, uma afirmação que captura a riqueza e
+          o escopo do Python atual. O fato de existir diversas linguagens
+          atualmente dificulta a resposta do porque python se tornou tão
+          popular, mas certamente existem diversas qualidades que chamam a
+          atenção para a linguagem. Alguns deles são: qualidade de software,
+          produtividade de desenvolvimento, portabilidade de programas, suporte
+          à biblioteca e integração de componentes que enaltecem pontos fortes
+          do Python como foco em legibilidade, coerência, tamanho de código
+          reduzido, execução em diferentes plataformas de computadores e sua
+          coleção extensa de funcionalidades portáteis \cite{oreillypython}.
+          Veja na figura \ref{fig:pythonpopylariy} que Python é uma das
+          linguagens mais populares atualmente, assim como Javascript, outra
+          linguagem famosa na programação web.
+        </p>
+        <h2>O que é python?</h2>
+        <p>
+          Python é uma linguagem de programação interpretada multi-paradigma
+          muito relevante para a ciência da computação. Essa é uma linguagem
+          dinâmica criada com a intenção de aumentar o alcance da programação
+          para a comunidade Unix/C. Python foi criada com a intenção de melhorar
+          aspéctos característicos da linguagem ABC, antes desenvolvida pela
+          equipe da Centrum Wiskunde \& Informatica, para facilitar a confecção
+          de utilitários para o sistema operacional Amoeba. Guido pretendia
+          aprimorar alguns aspectos da linguagem ABC como I/O (entrada e saída),
+          características restritivas: criação e uso de tipos, sintaxe
+          ideossincrática (todas as palavras-chave em letras maiúsculas) e seu
+          editor estruturado integrado, que seus usuários reprovavam. Python
+          acabou se tornando uma das linguagens mais utilizadas atualmente e é
+          amplamente reconhecida por ser uma lingagem com alta portabilidade,
+          alto poder computacional, integrável, dinâmica e de fácil aprendizado
+          [\cite{foreword}, \cite{pythonphrasebook}]. % retirar a palavra
+          interpretada da primeira linha caso adicionada a parte de
+          interpretação de python
+        </p>
+        <h2>Aplicações da linguagem</h2>
+        <p>
+          Python é utilizada tanto na área acadêmica quanto na área empresarial.
+          Ela esta presente em diversas aplicações, dentre elas: aplicações web,
+          aplicações científicas, matemáticas (por exemplo: análise de dados e
+          inteligência artificial), educacionais e desenvolvimento de interfaces
+          gráficas. Sua abrangência nas mais diversas áreas pode ser justificada
+          por diversos fatores, alguns dos quais já foram listados na parte
+          inicial deste capítulo. Entretanto, não poderiamos deixar de citar
+          outros caracteísticas como seu suporte à aritmética avançada e à
+          diversos tipos de arquivos, além do suporte a diversas bibliotecas e
+          frameworks
+        </p>
+        <p>ADD missing Info</p>
+        <p>
+          Como exemplificado na tabela \ref{tab:frameworksAndBibs}, Python
+          apresenta diversos frameworks e bibliotecas, dentre os quais, aqueles
+          voltados a programação de aplicações web saltam aos olhos. Veja, por
+          exemplo, o micro-framework Flask, conhecido por proporcionar
+          simplicidade, flexibilidade e escalonabilidade a projetos de
+          servidores web. Esse freamework foi e ainda é bastante utilizado para
+          a criação de projetos e fornece ao desenvolvedor uma gama de
+          possibilidades e funcionalidades para integração e aumento da
+          eficiência da aplicação. Flask depende do kit de ferramentas Werkzeug
+          WSGI, do mecanismo de modelo Jinja e do kit de ferramentas Click CLI.
+          Note que nesse famework é possível confeccionar uma aplicação mínima
+          em apenas 5 linhas de código, como na figura \ref{fig:flaskhelloworld}
+          [\cite{flasksite}, \cite{pythonflask}].
+        </p>
+        <p>
+          Outro exemplo é o framework Django, utilizado para criar complexos
+          sistemas web em Python. Esse framework é conhecido por ser rápido,
+          escalável, seguro, versátil e abrangente, contendo ferramentas para
+          cuidar da autenticação do usuário, administração de conteúdo, mapas do
+          site, feeds RSS e muitas outras tarefas \cite{djangosite}. Django,
+          assim como falsk é um dos principais frameworks web para Python e é
+          muito importante na programação web. Um exemplo de uso deste framework
+          é retratado na pesquisa de Ishan Adhikari Bairagi (et al.) que
+          apresenta o processo de desenvolvimento e a análise de um projeto
+          estruturado com HTML, Django e Bootstrap \cite{pythondjango}.
+          Ressaltamos aqui que informações sobre diversos outros frameworks e
+          bibliotecas para desenvolvimento web com Python podem ser encontradas
+          na \href{https://wiki.python.org/moin/WebFrameworks/}{Wiki oficial do
+          Python} \cite{pythonwiki}.
+        </p>
+
+        <p>
+          Observe, entretanto, que com o avanço da internet, diversos sites
+          estão encontrando problemas envolvendo multiplas solicitações de
+          usuário e a necessidade de alta simultaneidade e tratamento de
+          concorrência para as requisições. Nesse cenário, a linguagem dinâmica
+          Javascript cresceu em popularidade e em utilização, veja, por exemplo,
+          na figura \ref{fig:webframeworkspopularity} que tecnologias como
+          Node.js e frameworks como ReactJS e JQuery (feitos para Javascript)
+          são consideravelmente mais populares e mais utilizados do que aqueles
+          voltados para Python (Django e Flask), já retratados nos parǵrafos
+          anteriores. Lembre-se que, como dito anteriormente, o processamento
+          eficiente de múltiplas requisições concorrentes é de extrema
+          importância na web atual, logo avaliar a situação através de uma visão
+          voltada para a performance das diferentes linguagens pode proporcionar
+          uma justificativa para a maior popularidade das tecnologias Javascript
+          [\cite{nodevspython},
+        </p>
+
+        <p>
+          Para analisar melhor a situação recorremos a pesquisa realizada por
+          Sai Sri Nandan Challapalli (et al.), que foca em analisar o processo
+          de desenvolvimento de sites estáticos e dinâmicos que utilizam Python
+          e Node.js para o back-end. O artigo realiza uma comparação de
+          desempenho entre as duas tecnologias a partir de duas métricas: (1)
+          respostas à requisições por segundo e (2) tempo de resposta para cada
+          requisição. Os resultados obtidos mostraram que o servidor Node.js
+          performou significativamente mehor do que o servidor em Python. O
+          servidor em Node.js obteve uma performance, aproximadamente, 250 vezes
+          maior do que aquela obteida pelo servidor Python. Durante os testes
+          Node.js atendeu, em média, a 30616 requisições em um período de 30
+          segundos enquanto o servidor Python atendeu a apenas 121. Observe
+          também, na figura \ref{fig:timeperrequest} o tempo médio por resposta
+          a requisição obtidos em cada servidor \cite{nodevspython}.
+        </p>
+
+        <p>
+          Por fim ressaltamos que, mesmo que Python não seja a principal escolha
+          para programação web, atualmente a linguagem está sendo muito
+          utilizada para análise de dados, programação científica e tecnica,
+          além de também ser muito aplicada na área de Inteligência Artificial.
+          As linguagens METALAB e R, por exemplo, são muito utilizadas para
+          aplicações científicas e Python se tornou uma famosa alternativa para
+          essas linguagens. Essa preferência pela lingaugem se deve a sintaxe
+          simples, modularizada e com design voltado para programação orientada
+          a objetos, ademais a presença de bibliotecas como Numpy (já citada na
+          tabela \ref{tab:frameworksAndBibs}) enfatiza a linguagem para
+          aplicações númericas \cite{puthondatascientifictechnicalaplication}.
+          Veja na figura \ref{fig:bibliotecasMaisUtilizadas} que Numpy, Pandas e
+          Tensorflow, forma as bibliotecas mais trabalhadas e populares no
+          ranking do StackOverflow \cite{pythonpopularity}. Ressaltamos também a
+          presença de Python em várias faculdades, incluindo a Stanford, UFMG e
+          PUC-Minas, como recurso para lecionar matérias que requerem aplicação
+          matemática, como Inteligencia Artifivial.
+        </p>
+
+        <h2>Histórico da Linguagem</h2>
+        <p>
+          A linha do tempo das linguagens de programação é algo muito extenso,
+          uma vez que as primeiras linguagens de programação a existirem no
+          mundo foram criadas há mais de 50 anos, resultando em uma longa
+          história com diversos tipos de implementação e propósitos. No entanto,
+          algumas linguagens marcaram a genealogia das linguagens de programação
+          de alto nível comuns, sendo algumas delas: Fortran, Pascal, ML,
+          Haskell, C, C++, Python, Java, C\# e JavaScript [\cite{oreillypython},
+          \cite{lpsebesta}].
+        </p>
+
+        <h2>O Criador</h2>
+        <p>
+          Guido van Rossum é um renomado programador holandês, famoso por criar
+          a linguagem de programação Python. O distinto engenheiro, que
+          atualmente trabalha na divisão de desenvolvimento da Microsoft, teve
+          uma longa e brilhante carreira na computação [\cite{foreword},
+          \cite{severance2015early}, \cite{guidoresume}]. É o criador da segunda
+          linguagem mais famosa entre os desenvolvedores, a linguagem Python.
+          Uma linguagem baseada principalmente nas linguagens ABC, C e Modula-3
+          [\cite{pythonpopularity}, \cite{lpsebesta}].
+        </p>
+
+        <h2>A linguagem ABC (80s)</h2>
+        <p>
+          No final dos anos 80 Guido van Rossum trabalhou no Centrum Wiskunde \&
+          Informatica (CWI) desenvolvendo um sistema operacional distribuido
+          chamado Amoeba. Como o modelo do sistema de arquivos do Amoeba era
+          diferente do modelo exitente Unix, novos utilitários teriam que ser
+          cofeccionados pela pequena equipe responsável pelo projeto.
+          Confeccionar tantos utilitários levaria um tempo considerável
+          utilizando a linguagem C, portanto Guido se perguntou se não seria
+          possível criar uma nova linguagem que facilitaria a confecção dos
+          utilitários [\cite{severance2015early}, \cite{foreword}].
+        </p>
+        <p>
+          Com esse intuito Guido trabalhou na confecção da linguagem ABC, uma
+          linguagem muito promissora para a época, entretanto seu alto nível de
+          abstração tornava a linguagem inadequada para conversar com outros
+          sistemas. Durante uma longa pausa de férias em dezembro de 1989, Guido
+          começou a desenvolver uma linguagem semelhante a ABC que poderia se
+          comunicar com o sistema operacional e seria adequada para o
+          desenvolvimento rápido de utilitários de sistema operacional para o
+          Amoeba. Ele chamou seu projeto nascente de Python, inspirando-se no
+          programa de televisão Monty Python's Flying Circus
+          [\cite{severance2015early}, \cite{foreword}].
+        </p>
+        <h2>A Primeira Versão (1991)</h2>
+        <p>
+          A primeira versão do Python foi lançada em fevereiro de 1991 e
+          distribuída usando o grupo de notícias alt.sources. Com o aumento de
+          engajamento da comunidade algumas empresas começaram a utilizar e até
+          mesmo depender de Python. Nesse momento o instituto NIST (National
+          Institute of Standards and Technology) convidou Guido para para os
+          Estados Unidos, local onde o primeiro workshop de Python foi sediado
+          em novembro de 1994. Por meio do workshop Python, Guido conheceu a
+          CNRI (Corporation for National Research Initiatives) empresa para a
+          qual trabalharia durante os anos de 1995 a 2000
+          [\cite{severance2015early}, \cite{foreword}].
+        </p>
+        <p>
+          A CNRI possibilitou que Guido e sua equipe fizessem levassem Python
+          adiante, com investimentos significativos, mas alguns se perguntaram
+          se o produto deveria mudar de código aberto para um modelo em que
+          algum lucro pudesse ser obtido. Situação que levou Guido a entrar em
+          conflito com a liderança do CNRI sobre o licenciamento da linguagem
+          [\cite{severance2015early}, \cite{severance2015modern},
+          \cite{foreword}].
+        </p>
+        <h2>A Segunda Versão (2000)</h2>
+        <p>
+          Enquanto um conflito de interesses estava acontecendo na CNRI uma
+          pequena startup de código aberto entrou em contato com Guido e lhe
+          ofereceu uma vaga para trabalhar com Python e com uma pequena equipe
+          em tempo integral. Enquanto trabalhava na startup Guido e sua equipe
+          criaram o Python 2 (lançado em outubro de 2000) que era muito
+          importante, tato por utilizar Unicode quanto por representar uma
+          quebra de vínculo definitiva com a empresa CNRI, que estava em
+          desacordo quanto à propriedade de parte do código da linguagem
+          [\cite{severance2015early}, \cite{severance2015modern},
+          \cite{foreword}].
+        </p>
+        <p>
+          A medida que os conflitos de licenciamento com CNRI eram resolvidos, a
+          startup na qual Guido trabalhava começou a desmontar. Após o fim da
+          startup Guido foi trabalhar para uma empresa de sucesso fortemente
+          envolvida com a comunidade Python, a empresa Zope. Como esta empresa
+          era focada na linguagem ela se benficiava com seu investimento em
+          Guido e em sua equipe [\cite{severance2015modern}, \cite{foreword}].
+        </p>
+        <h2>Python 3000 (2008)</h2>
+        <p>
+          Por volta de 2005, com o aumento das aplicações Python e com o aumento
+          dos problemas de compatibilidade, a linguagem precisou de uma revisão.
+          Os problemas encontrados na linguagem poderiam ser concertados e a
+          equipe que realizaria o projeto ja apresentava as soluções ealboradas,
+          entretanto o concerto tornaria a linguagem incompatível com suas
+          versões anteriores. Nesse momento surgio a ideia de confeccionar o
+          Python 3000 (ou "py3k") que se tornaria o atualmente conhecido Python
+          3. A linguagem lançou sua terceira versão em dezembro de 2008
+          [\cite{severance2015modern}, \cite{foreword}].
+        </p>
+      </div>
+
+      <div>
+        <h1>Paradigmas de Python</h1>
+        <p>
+          Uma linguagem de programação (LP) é uma linguagem formal voltada para
+          a descrição e aplicação de algoritmos. As LPs são voltadas para a
+          resolução de problemas computacionais, que por sua vez, podem ser
+          solucionados dependendo da perspectiva do desenvolvedor/pesquisador.
+          Por essa razão diferentes paradigmas de linguagem foram elaborados e
+          são selecionados de acordo com o problema computacional a ser
+          trabalhado. Os paradigmas de programação declarativo Funcional (FP) e
+          imperativo Orientado a Objetos (OOP) são os mais comuns
+          [\cite{wang2022}, \cite{lpsebesta}]. Veja na Tabela \ref{tab:Table1}
+          algumas das linguagens de programação mais utilzadas, assim como seu
+          paradigma correspondente e seus cenários de aplicação.
+        </p>
+        <p>
+          Como visto na Tabela \ref{tab:Table1}, múltiplas LPs modernas são
+          multi-paradigma e consequentemente apresentam diferentes graus de
+          suporte a conceitos de paradigmas diferentes. Por exemplo, algumas LPs
+          lançadas por volta de 2010 já apresentam suporte aos conceitos
+          centrais do PF, algumas dessas linguagens são Rust e Kotlin
+          \cite{wang2022}.
+        </p>
+        <h2>Paradigmas de Python</h2>
+        <p>
+          Python é uma linguagem de programação multi-paradigma com suporte
+          completo a orientação a objetos, fator explícito pelo fato de que nela
+          todo valor representado é na verdade um objeto que contém diversos
+          métodos pré-estabelecidos. Dentre os paradigmas suportados pela
+          linguagem estão: (1) a programação funcional (FP), (2) programação
+          orientada a objetos (OOP), (3) programação imperativa (PI), (4)
+          programação procedural (PP) e (5) \textit{aspect-oriented programming}
+          (misto) \cite{pythonparadigms}.
+        </p>
+        <p>
+          Assim como outras linguagens multi-paradigma, Python contém um
+          paradigma predominante, ao qual da suporte e enfatiza, entretanto
+          apresenta também diversos recursos advindos de outros paradigmas,
+          observer com mais detalhe esses recursos na Tabela
+          \ref{tab:pythonfeatures}. O paradigma predominante de Python é a
+          orientação por objetos, portanto esse é o enfoque da linguagem
+          \cite{pythonparadigms}. Para exemplificar a afirmação anterior observe
+          que a linguagem apresenta uma método chamado "type()", que retorna o
+          tipo de determinado valor. Caso o interpretador receba o método
+          "type('Hello World')" a resposta será "<class 'str'>"
+          \cite{pythondoc}.
+        </p>
+        <h2>Paradigma Imperativo</h2>
+        <p>
+          Para o paradigma imperativo, o código deve descrever explicitamente o
+          processo de execução de determinado algorítmo através de cláusulas que
+          alteram o estado do programa. Esse paradigma é intrínseco da linguagem
+          Python, principalmente porque é a base para OOP e PP. Vale ressaltar
+          que ele também é presente em outras linguagens que influenciaram
+          python, como em ABC e C \cite{pythonparadigms}. Para exemplificar,
+          observe o trecho de código: \texttt{"num: int = 10"}, em Python essa
+          construção é um exemplo de aplicação do paradigma imperativo
+          \cite{pythondoc}.
+        </p>
+        <h2>Paradigma Procedural</h2>
+        <p>
+          A programação procedural consiste em organizar funcionalidades de um
+          programa em trechos de código reutilizáveis chamados procedimentos.
+          Esse paradigma proporciona as linguagens que o utilizam um maior grau
+          de abstração, permitindo que os desenvolvedores diferenciem a forma
+          como algo é implementado, de sua funcionalidade, funcionalidade de
+          extrema importancia para uma linguagem de programação
+          [\cite{pythonparadigms}, \cite{lpsebesta}]. Em python, um procedimento
+          é chamado de função e pode ser definido como se segue:
+        </p>
+        <h2>Paradigma Orientação a Objetos</h2>
+        <p>
+          A programação orientada a objetos é um estilo de programação que
+          fornece abstrações utilizando classes e objetos. Uma classe é uma
+          estrutura que define o estado (campos) e o comportamento (métodos) de
+          um objeto. Os objetos são instâncias de classes e podem ser criados e
+          manipulados por referência. Ao utilizar a programação orientada a
+          objetos em Python, qualquer declaração de classe, incluindo todo o seu
+          conteúdo, é considerada uma aplicação desse paradigma. Também
+          consideramos as chamadas de métodos em objetos como parte da
+          programação orientada a objetos. Ao classificar o paradigma utilizado
+          em um programa, é necessário analisar cada declaração dentro do corpo
+          da classe. Se a declaração utilizar recursos funcionais ou recursos
+          procedurais, isso indica a utilização de múltiplos paradigmas, e o
+          programa é classificado como tal \cite{pythonparadigms}.
+        </p>
+        <h2>Paradigma Funcional</h2>
+        <p>
+          Programação funcional é um estilo de programação que se baseia na
+          declaração do que se deseja que um programa faça, em vez de como ele
+          deve ser executado, diferentemente dos estilos imperativos anteriores.
+          Na programação funcional, as funções são a unidade fundamental. Em
+          Python, as funções funcionais são chamadas de lambdas. Nesse
+          paradigma, os usuários criam e combinam funções para construir seus
+          programas. A iteração é um princípio essencial na programação
+          funcional e geralmente é realizada por meio de funções recursivas. É
+          relevante compreender a frequência com que os recursos funcionais são
+          utilizados em Python, pois isso auxilia no direcionamento de futuras
+          mudanças na linguagem. Vale ressaltar que existem várias Propostas de
+          Aprimoramento do Python (PEPs) que foram aceitas ou estão sendo
+          consideradas para adicionar recursos funcionais adicionais, como a
+          expressão geradora já implementada (PEP 289), o suporte a co-rotinas
+          para geradores (PEP 342) e a proposta de correspondência estrutural
+          (PEP 634) \cite{pythonparadigms}.
+        </p>
+        <h2>Classificação das Funcionalidades</h2>
+        <p>
+          Como visto anteriormente, Python apresenta diversos recursos advindos
+          de diferentes paradigmas de programação, portanto apresentamos na
+          Tabela \ref{tab:pythonfeatures} retirada de uma pesquisa realizada por
+          Robert Dyer e Jigyasa Chauhan em 2022 acerca dos paradigmas presentes
+          na linguagem.
+        </p>
+      </div>
+      <div>
+        <h1>Considerações Finais</h1>
+        <h2>Bruno Oliveira Santiago</h2>
+        <p>
+          Uma das características mais notáveis do Python é sua sintaxe simples
+          e legível. A linguagem foi projetada para ser fácil de entender e
+          escrever, com uma sintaxe que se assemelha à linguagem natural. Isso
+          torna o código Python altamente legível e de fácil manutenção,
+          facilitando o trabalho em equipe e a colaboração em projetos
+          complexos.
+        </p>
+        <p>
+          Outro aspecto que torna Python marcante é sua ampla biblioteca padrão.
+          Python possui uma rica coleção de módulos e pacotes que abrangem uma
+          ampla gama de funcionalidades, desde manipulação de strings e acesso a
+          bancos de dados até processamento de imagens e criação de interfaces
+          gráficas. Essa biblioteca padrão abrangente permite que os
+          desenvolvedores realizem tarefas comuns de programação sem a
+          necessidade de procurar bibliotecas externas, economizando tempo e
+          esforço.
+        </p>
+        <p>
+          Python também é uma linguagem altamente versátil. Ela pode ser usada
+          para desenvolver uma variedade de aplicativos, desde scripts simples
+          até aplicativos web complexos e até mesmo projetos científicos. Sua
+          flexibilidade torna Python uma escolha popular para iniciantes em
+          programação, bem como para profissionais experientes em várias áreas.
+        </p>
+        <p>
+          Outra vantagem notável do Python é sua portabilidade. Os programas
+          escritos em Python podem ser executados em várias plataformas,
+          incluindo Windows, macOS e Linux, com poucas ou nenhuma modificação
+          necessária. Isso significa que os desenvolvedores podem criar
+          aplicativos que funcionam em diferentes sistemas operacionais,
+          alcançando um público mais amplo.
+        </p>
+        <p>
+          Outra característica marcante é a quantidade de paradigmas que a
+          linguagem possui. Por apresentar paradigmas declarativos e
+          imperativos, Python permite que a estrutura do código se adéque ao
+          projeto da equipe e não o contrário. Dessa forma, a flexibilidade da
+          linguagem permite focar na solução do problema, sem precisar se
+          esforçar em seguir uma estrutura sintática rígida.
+        </p>
+        <p>
+          Em resumo, Python se destaca por sua sintaxe simples e legível, sua
+          ampla biblioteca padrão, sua versatilidade e sua portabilidade. Essas
+          características combinadas tornam Python uma linguagem poderosa e
+          acessível, adequada para iniciantes e especialistas em programação.
+          Não é de surpreender que Python tenha conquistado uma posição de
+          destaque no mundo da programação e continue a ser uma escolha
+          preferida para uma variedade de aplicações.
+        </p>
+        <h2>Fábio Freire Kochem</h2>
+        <p>
+          O fato da linguagem Python ser interpretada é algo muito interessante,
+          visto que não é algo característico da maioria das linguagens, tendo
+          como exemplo mais recente o JavaScript ou PHP. Entretanto, ainda é uma
+          dúvida para a maioria dos programadores o significado da utilização de
+          um interpretador e da independência de um compilador, mesmo que seja
+          um mecanismo muito interessante de se entender.
+        </p>
+        <p>
+          A função do interpretador Python é pegar o código-fonte escrito na
+          linguagem e ler o mesmo, linha por linha, executando-o em sequência. A
+          tradução das instruções do código é feita para a linguagem de máquina
+          em tempo real, não sendo necessário compilar previamente aquele mesmo
+          código-fonte lido pelo interpretador. Embora a linguagem seja
+          interpretada, ela também possui um compilador, onde código-fonte é
+          traduzido para um formato chamado bytecode Python, que é uma
+          representação de baixo nível das instruções na linguagem. O bytecode é
+          salvo em arquivos com a extensão '.pyc' para um uso futuro.
+        </p>
+        <p>
+          Agora que é possível entender as duas funcionalidades, a forma como
+          Python as trata deixa mais interessante a relação. Durante a execução
+          do código Python, o interpretador Python pode otimizar o desempenho do
+          programa convertendo partes do bytecode em código de máquina, sendo
+          esse processo conhecido com Just-in-Time, melhorando
+          significativamente a execução do programa.
+        </p>
+        <p>
+          Contudo, o interpretador é extremamente necessário para executar o
+          código, mas também o compilador pode ser uma ferramenta opcional caso
+          seja necessário/desejado otimizar o desempenho e fornecer o bytecode
+          compilado, para o interpretador utilizar futuramente.
+        </p>
+        <h2>Fernando Campos Silva Dal' Maria</h2>
+        <p>
+            
+        </p>
+      </div>
+      <a href="../../../index.html">Mais seminários</a>
     </main>
-    <footer>
-        
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
